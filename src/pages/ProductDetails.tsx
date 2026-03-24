@@ -16,7 +16,7 @@ interface Product {
 export default function ProductDetails() {
   const { slug } = useParams<{ slug: string }>();
   const [product, setProduct] = useState<Product | null>(null);
-  const [related, setRelated] = useState<Product[]>([]);
+  const [related, setRelated] = useState<{ id: string; name: string; price: number; image_url: string | null; slug: string; is_new: boolean }[]>([]);
   const [qty, setQty] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
   const [loading, setLoading] = useState(true);
