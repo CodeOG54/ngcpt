@@ -38,8 +38,8 @@ export default function Index() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="container mx-auto px-4 py-20 md:py-10">
+        <div className="grid md:grid-cols-2 gap-5 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}>
             <span className="text-sm font-medium text-primary tracking-wider uppercase">Premium Essentials</span>
             <h1 className="heading-display text-4xl md:text-6xl font-bold mt-3 leading-tight">
